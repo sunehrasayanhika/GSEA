@@ -53,7 +53,7 @@ library(data.table)
 """We will read in the differential expression results we will download from online. These results are from an acute lymphoblastic leukemia (ALL) mouse lymphoid cell model we used for differential expression analysis using DESeq2 (Love et al. 2014). The table contains summary statistics including Ensembl gene IDs, log2 fold change values, and adjusted p-values (FDR in this case). We can identify differentially regulated genes by filtering these results and use this list as input to GSEA."""
 
 # Read in the differential expression results
-diff_expr <- fread("/content/finalresults.csv")
+diff_expr <- fread("/content/input sample.csv")
 
 # Read in the contents of the differential expression results file
 dge_df <- readr::read_csv("/content/finalresults.csv")
