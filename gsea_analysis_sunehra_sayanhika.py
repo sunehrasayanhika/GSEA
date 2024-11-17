@@ -56,7 +56,7 @@ library(data.table)
 diff_expr <- fread("/content/input sample.csv")
 
 # Read in the contents of the differential expression results file
-dge_df <- readr::read_csv("/content/finalresults.csv")
+dge_df <- readr::read_csv("/content/input sample.csv")
 dge_df
 
 """The Molecular Signatures Database (MSigDB) is a resource that contains annotated gene sets that can be used for pathway or gene set analyses (Subramanian et al. 2005; Liberzon et al. 2011). We can use the msigdbr package to access these gene sets in a format compatible with the package we’ll use for analysis, clusterProfiler (Yu et al. 2012; Dolgalev 2020).
